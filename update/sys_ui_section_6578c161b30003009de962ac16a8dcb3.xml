@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="6578c161b30003009de962ac16a8dcb3" sys_domain="global" table="ibm_va_conversation_log" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>conversation_id</element>
+            <position>0</position>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-09-02 00:31:18</sys_created_on>
+            <sys_id>dd084104b30103009de962ac16a8dc5a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="ibm_va_conversation_log" sys_domain="global" view="Default view">6578c161b30003009de962ac16a8dcb3</sys_ui_section>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-09-02 00:31:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>workspace</element>
+            <position>1</position>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-09-02 00:31:18</sys_created_on>
+            <sys_id>95084104b30103009de962ac16a8dc5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="ibm_va_conversation_log" sys_domain="global" view="Default view">6578c161b30003009de962ac16a8dcb3</sys_ui_section>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-09-02 00:31:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user</element>
+            <position>2</position>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-09-02 00:31:18</sys_created_on>
+            <sys_id>19084104b30103009de962ac16a8dc5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="ibm_va_conversation_log" sys_domain="global" view="Default view">6578c161b30003009de962ac16a8dcb3</sys_ui_section>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-09-02 00:31:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>connect_bot</element>
+            <position>3</position>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-09-02 00:31:18</sys_created_on>
+            <sys_id>99084104b30103009de962ac16a8dc5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="ibm_va_conversation_log" sys_domain="global" view="Default view">6578c161b30003009de962ac16a8dcb3</sys_ui_section>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-09-02 00:31:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>input_message</element>
+            <position>4</position>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-09-02 00:31:18</sys_created_on>
+            <sys_id>1d084104b30103009de962ac16a8dc5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="ibm_va_conversation_log" sys_domain="global" view="Default view">6578c161b30003009de962ac16a8dcb3</sys_ui_section>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-09-02 00:31:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>output_message</element>
+            <position>5</position>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-09-02 00:31:18</sys_created_on>
+            <sys_id>9d084104b30103009de962ac16a8dc5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="ibm_va_conversation_log" sys_domain="global" view="Default view">6578c161b30003009de962ac16a8dcb3</sys_ui_section>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-09-02 00:31:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-09-02 00:31:18</sys_created_on>
+            <sys_id>11084104b30103009de962ac16a8dc5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="ibm_va_conversation_log" sys_domain="global" view="Default view">6578c161b30003009de962ac16a8dcb3</sys_ui_section>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-09-02 00:31:18</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_created_on</element>
+            <position>7</position>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-09-02 00:31:18</sys_created_on>
+            <sys_id>91084104b30103009de962ac16a8dc5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="ibm_va_conversation_log" sys_domain="global" view="Default view">6578c161b30003009de962ac16a8dcb3</sys_ui_section>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-09-02 00:31:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sequence</element>
+            <position>8</position>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-09-02 00:31:18</sys_created_on>
+            <sys_id>15084104b30103009de962ac16a8dc5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="ibm_va_conversation_log" sys_domain="global" view="Default view">6578c161b30003009de962ac16a8dcb3</sys_ui_section>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-09-02 00:31:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>9</position>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-09-02 00:31:18</sys_created_on>
+            <sys_id>95084104b30103009de962ac16a8dc5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="ibm_va_conversation_log" sys_domain="global" view="Default view">6578c161b30003009de962ac16a8dcb3</sys_ui_section>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-09-02 00:31:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>10</position>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-09-02 00:31:18</sys_created_on>
+            <sys_id>19084104b30103009de962ac16a8dc5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="ibm_va_conversation_log" sys_domain="global" view="Default view">6578c161b30003009de962ac16a8dcb3</sys_ui_section>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-09-02 00:31:18</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>action</element>
+            <position>11</position>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-09-02 00:31:18</sys_created_on>
+            <sys_id>99084104b30103009de962ac16a8dc5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="ibm_va_conversation_log" sys_domain="global" view="Default view">6578c161b30003009de962ac16a8dcb3</sys_ui_section>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-09-02 00:31:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>response</element>
+            <position>12</position>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-09-02 00:31:18</sys_created_on>
+            <sys_id>1d084104b30103009de962ac16a8dc5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="ibm_va_conversation_log" sys_domain="global" view="Default view">6578c161b30003009de962ac16a8dcb3</sys_ui_section>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-09-02 00:31:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>error_message</element>
+            <position>13</position>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-09-02 00:31:18</sys_created_on>
+            <sys_id>9d084104b30103009de962ac16a8dc5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="ibm_va_conversation_log" sys_domain="global" view="Default view">6578c161b30003009de962ac16a8dcb3</sys_ui_section>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-09-02 00:31:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>ibm_va_conversation_log</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-07-18 23:21:20</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6578c161b30003009de962ac16a8dcb3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>ibm_va_conversation_log</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+            <sys_update_name>sys_ui_section_6578c161b30003009de962ac16a8dcb3</sys_update_name>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-07-18 23:21:20</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

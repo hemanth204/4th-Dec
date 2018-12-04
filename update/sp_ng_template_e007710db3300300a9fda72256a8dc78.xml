@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_ng_template">
+    <sp_ng_template action="INSERT_OR_UPDATE">
+        <id>/at-mentions.tpl</id>
+        <sp_widget display_value="Connect Chat for Watson">64e1878eb3800300a9fda72256a8dcf3</sp_widget>
+        <sys_class_name>sp_ng_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-23 20:15:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e007710db3300300a9fda72256a8dc78</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>/at-mentions.tpl</sys_name>
+        <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+        <sys_update_name>sp_ng_template_e007710db3300300a9fda72256a8dc78</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-09-06 05:30:22</sys_updated_on>
+        <template><![CDATA[<div class="dropdown-menu sn-widget sn-mention">
+  <ul class="sn-widget-list_v2">
+    <li ng-if="items.length > 0 && !items[0].termLengthIsZero" mentio-menu-item="person" ng-repeat="person in items" class="no-transition">
+      <div class="sn-widget-list-content sn-widget-list-content_static">
+        <sn-avatar primary="person" class="avatar-small" show-presence="true" />
+      </div>
+      <div class="sn-widget-list-content">
+        <span class="sn-widget-list-title" ng-bind-html="person.name"> </span>
+        <span class="sn-widget-list-subtitle" ng-if="person.record_is_visible === false">${'Cannot see record'}</span>
+      </div>
+    </li>
+    <li ng-if="items.length === 1 && items[0].termLengthIsZero">
+      <div class="sn-widget-list-content">
+        <span class="sn-widget-list-title sn-widget-list-title_wrap">${'Enter the name of a person you want to mention'}</span>
+      </div>
+    </li>
+    <li ng-if="items.length === 0 && items.loading">
+      <div class="sn-widget-list-content sn-widget-list-content_static">
+        <span class="sn-widget-list-icon icon-loading"></span>
+      </div>
+      <div class="sn-widget-list-content">
+        <span class="sn-widget-list-title">${'Loading...'}</span>
+      </div>
+    </li>
+    <li ng-if="items.length === 0 && !items.loading">
+      <div class="sn-widget-list-content">
+        <span class="sn-widget-list-title">${'No users found'}</span>
+      </div>
+    </li>
+  </ul>
+</div>]]></template>
+    </sp_ng_template>
+</record_update>

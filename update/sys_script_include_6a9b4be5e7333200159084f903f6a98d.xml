@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_ibm_cs.WatsonContextualSearchUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Util for Watson Contextual Search Actions</description>
+        <name>WatsonContextualSearchUtil</name>
+        <script><![CDATA[var WatsonContextualSearchUtil = Class.create();
+WatsonContextualSearchUtil.prototype = {
+    initialize: function(vaConstants, i18n) {
+		this.vaConstants = vaConstants;
+		this.i18n = i18n;
+	},
+	
+	search: function(context, searchTerm) {
+		var payload = {
+			// Search Context(cxs_context_config) sys_id/name.
+			context : context, 
+			query : {
+				freetext: searchTerm //(this is coming from watson)
+			}
+		};
+		
+		var request = new global.cxs_SearchAPI();
+		var response = request.search(payload);
+		
+		// Handles default error handling:
+		// TODO: Needs better error handling
+		return response;	
+	},
+	
+	// true for success, false for failure
+	processSearchResponse: function(response) {
+		return response.status && response.status.code === 200;
+	},
+	
+	// These error handling is for the contextual search engine only.
+	// TODO: Needs better error handling
+	processSearchErrors: function(response) {
+		if(response.status.code !== 200)
+			return this.i18n.getMessageLang("I'm having problems right now. Please try again later.");
+	},
+	
+	processGeneralResults: function(response, maxResults, confidenceThreshold) {
+		var results = response.results;
+		var relevantResults = [];
+		if(results.length > 0) {
+			for(var i=0 ; i<maxResults; i++) {
+				// Result exists and score > confidenceThreshold
+				if (results[i] && results[i].meta.score >= confidenceThreshold)
+					relevantResults[i] = results[i];
+				else
+					break;
+			}
+		}
+		return relevantResults;
+	},
+	
+    type: 'WatsonContextualSearchUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>naitik.doshi</sys_created_by>
+        <sys_created_on>2017-07-06 22:42:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6a9b4be5e7333200159084f903f6a98d</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>WatsonContextualSearchUtil</sys_name>
+        <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+        <sys_update_name>sys_script_include_6a9b4be5e7333200159084f903f6a98d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-09-21 23:13:32</sys_updated_on>
+    </sys_script_include>
+</record_update>

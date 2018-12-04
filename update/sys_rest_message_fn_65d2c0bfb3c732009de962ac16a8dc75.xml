@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>basic</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile display_value="IBM Watson">a3417365db306300351059d0cf961900</basic_auth_profile>
+        <basic_auth_user/>
+        <content>{&#13;
+  "input": {&#13;
+    "text": "${message}"&#13;
+  },&#13;
+  "context": ${context}&#13;
+}</content>
+        <function_name>Message</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>IBM Watson Conversation - Message API [ Message ]</qualified_name>
+        <rest_endpoint>https://gateway.watsonplatform.net/assistant/api/v1/workspaces/1e10acd4-e48c-4c16-9540-2cf7b3ccf85a/message?version=2018-09-20</rest_endpoint>
+        <rest_message display_value="IBM Watson Conversation - Message API">fb62c0bfb3c732009de962ac16a8dc0e</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-06-06 01:00:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>65d2c0bfb3c732009de962ac16a8dc75</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Message</sys_name>
+        <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+        <sys_update_name>sys_rest_message_fn_65d2c0bfb3c732009de962ac16a8dc75</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-27 11:25:29</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

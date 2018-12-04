@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>ibm_va_connect_bot</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Sync Watson Virtual Agent Name</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// get the user's live_profile record
+	var gr = new GlideRecord('live_profile');
+	gr.addQuery('type', 'user');
+	gr.addQuery('user', current.sys_id);
+	gr.query();
+	
+	// if exists
+	if (gr.next()) {
+		// update the name		
+		var name = '';
+		if (!current.first_name.nil())
+			name = current.first_name;
+		if (!current.last_name.nil()) {
+			if (name.length > 0)
+				name += ' ';
+			name += current.last_name;
+		}
+		gr.name = name;
+			
+		// save
+		gr.setWorkflow(false);
+		gr.update();
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-25 18:43:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7552f3e10b30030071f08f6d37673a27</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Sync Watson Virtual Agent Name</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+        <sys_update_name>sys_script_7552f3e10b30030071f08f6d37673a27</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-25 23:12:42</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=7552f3e10b30030071f08f6d37673a27"/>
+</record_update>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>create_workspace</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2/>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>true</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint>Create a new workspace in your IBM Conversation Service with OOB ServiceNow Intents, Entities and Dialog.</hint>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Upload ITSM Workspace to Watson</name>
+        <onclick>bypassMandatory()</onclick>
+        <order>100</order>
+        <script><![CDATA[//Client-side 'onclick' function
+function bypassMandatory(){
+	g_form.setMandatory('name', false);
+	g_form.setMandatory('workspace_id', false);
+	g_form.setMandatory('connect_bot', false);
+	g_form.setMandatory('api_version', false);
+	g_form.setMandatory('language', false);
+	g_form.setMandatory('conv_rest_message', false);
+
+	//Call the UI Action and skip the 'onclick' function
+	gsftSubmit(null, g_form.getFormElement(), 'create_workspace');
+}
+
+//Code that runs without 'onclick'
+//Ensure call to server-side function with no browser errors
+if(typeof window == 'undefined')
+	createWorkspace();
+
+function createWorkspace() {
+	var vaConstants = new x_snc_ibm_cs.ConversationConstants();
+	var workspaceUtil = new x_snc_ibm_cs.WorkspaceUtil();
+	var watsonWorkspaceJSON = new x_snc_itsm_va.ServiceNowPreBuiltConversation().getWorkspace(); 
+	var response = workspaceUtil.createWorkspace(watsonWorkspaceJSON);
+	gs.addInfoMessage(response.status);
+	gs.info(response.status);
+	
+	if (response.snWsId)
+		action.setRedirectURL(vaConstants.IBM_VA_WORKSPACE + '.do?sys_id=' + response.snWsId);
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>false</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>farhana.chowdhury</sys_created_by>
+        <sys_created_on>2017-06-01 22:36:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8c2b3a96b3833200282c2ab716a8dc99</sys_id>
+        <sys_mod_count>59</sys_mod_count>
+        <sys_name>Upload ITSM Workspace to Watson</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+        <sys_update_name>sys_ui_action_8c2b3a96b3833200282c2ab716a8dc99</sys_update_name>
+        <sys_updated_by>naitik.doshi</sys_updated_by>
+        <sys_updated_on>2017-08-13 17:19:46</sys_updated_on>
+        <table>ibm_va_workspace</table>
+        <ui11_compatible>false</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

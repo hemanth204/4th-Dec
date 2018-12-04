@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="launcher_style" table="ibm_va_widget_instance" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>launcher_style</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Button</label>
+            <language>en</language>
+            <name>ibm_va_widget_instance</name>
+            <sequence>1</sequence>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-10-12 17:15:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f26daac1b33103009de962ac16a8dc32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2017-10-12 17:15:19</sys_updated_on>
+            <value>button</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>launcher_style</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bar</label>
+            <language>en</language>
+            <name>ibm_va_widget_instance</name>
+            <sequence>2</sequence>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-10-12 17:15:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>366daac1b33103009de962ac16a8dc32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2017-10-12 17:15:19</sys_updated_on>
+            <value>bar</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>launcher_style</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Tab</label>
+            <language>en</language>
+            <name>ibm_va_widget_instance</name>
+            <sequence>3</sequence>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-10-12 17:15:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>766daac1b33103009de962ac16a8dc32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2017-10-12 17:15:19</sys_updated_on>
+            <value>tab</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>launcher_style</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Menu Item</label>
+            <language>en</language>
+            <name>ibm_va_widget_instance</name>
+            <sequence>4</sequence>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-10-12 17:15:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b66daac1b33103009de962ac16a8dc32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2017-10-12 17:15:19</sys_updated_on>
+            <value>menu</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>launcher_style</element>
+            <name>ibm_va_widget_instance</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-10-12 17:15:19</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>01e8b72ddb306300351059d0cf961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>launcher_style</sys_name>
+            <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+            <sys_update_name>sys_choice_ibm_va_widget_instance_launcher_style</sys_update_name>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2017-10-12 17:15:19</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

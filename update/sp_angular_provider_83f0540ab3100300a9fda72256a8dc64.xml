@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_angular_provider">
+    <sp_angular_provider action="INSERT_OR_UPDATE">
+        <name>launcherImg</name>
+        <script><![CDATA[function(){
+	return function(scope, element, attrs){
+		var url = attrs.launcherImg;
+		element.css({
+			'background-image': 'url(' + url +')',
+			'background-size' : 'cover',
+			'background-repeat': 'no-repeat',
+			'background-position': 'center center',
+			'width': '100%',
+			'height': '100%'
+        });
+    };
+}]]></script>
+        <sys_class_name>sp_angular_provider</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-01 18:52:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>83f0540ab3100300a9fda72256a8dc64</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>launcherImg</sys_name>
+        <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+        <sys_update_name>sp_angular_provider_83f0540ab3100300a9fda72256a8dc64</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-01 19:02:34</sys_updated_on>
+        <type>directive</type>
+    </sp_angular_provider>
+</record_update>

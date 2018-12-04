@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_ng_template">
+    <sp_ng_template action="INSERT_OR_UPDATE">
+        <id>virtual-agent-tab-template.html</id>
+        <sp_widget display_value="Connect Chat for Watson">64e1878eb3800300a9fda72256a8dcf3</sp_widget>
+        <sys_class_name>sp_ng_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-03 00:36:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>be796e56b3900300a9fda72256a8dcec</sys_id>
+        <sys_mod_count>85</sys_mod_count>
+        <sys_name>virtual-agent-tab-template.html</sys_name>
+        <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+        <sys_update_name>sp_ng_template_be796e56b3900300a9fda72256a8dcec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-09-07 22:14:19</sys_updated_on>
+        <template><![CDATA[<div class="tab-wrapper drop-shadow">
+  <div class="tab-open">
+    <div tooltips tooltip-template="{{::options.open_label}}" tooltip-class="tab-tip" tooltip-side="left" ng-if="!data.showChat">
+      <a href ng-click="c.toggleOpen()">
+        <span class="virtual-agent-launcher-tab open-tab" ng-style="c.getStyle({'background-color': options.tab_bg_color,'color': options.tab_text_color})">
+          <h4>{{c.options.open_label}}</h4>
+        </span>
+      </a>
+    </div>
+  </div>
+  <div ng-show="data.showChat" class="slide-out" >
+    <div class="virtual-agent-chat tab-frame">
+      <integration-ibm-watson-conversation-header config="c.headerConfig"></integration-ibm-watson-conversation-header>
+      <div class="sn-connect-sp-conversation">
+        <div ng-if="::conversationID">
+          <sn-connect-standalone-conversation conversation-id="conversationID"></sn-connect-standalone-conversation>
+        </div>
+        <div ng-if="!conversationID">
+          <div class="connect-sp-container-no-config bg-white">
+            <div class="panel panel-info">
+              <div class="panel-body">
+                <p>
+                  {{::c.data.i18n.BOT_ID_MISSING}}
+                </p>
+              </div>
+            </div>        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+]]></template>
+    </sp_ng_template>
+</record_update>

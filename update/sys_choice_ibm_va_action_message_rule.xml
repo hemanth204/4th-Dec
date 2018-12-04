@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="message_rule" table="ibm_va_action" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>message_rule</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Prepend</label>
+            <language>en</language>
+            <name>ibm_va_action</name>
+            <sequence>1</sequence>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-10-12 17:15:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>876daac1b33103009de962ac16a8dc63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2017-10-12 17:15:20</sys_updated_on>
+            <value>prepend</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>message_rule</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Append</label>
+            <language>en</language>
+            <name>ibm_va_action</name>
+            <sequence>2</sequence>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-10-12 17:15:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c76daac1b33103009de962ac16a8dc63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2017-10-12 17:15:20</sys_updated_on>
+            <value>append</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>message_rule</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Override</label>
+            <language>en</language>
+            <name>ibm_va_action</name>
+            <sequence>3</sequence>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-10-12 17:15:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0b6daac1b33103009de962ac16a8dc63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2017-10-12 17:15:20</sys_updated_on>
+            <value>override</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>message_rule</element>
+            <name>ibm_va_action</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-10-12 17:15:20</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>09e8b72ddb306300351059d0cf961952</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>message_rule</sys_name>
+            <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+            <sys_update_name>sys_choice_ibm_va_action_message_rule</sys_update_name>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2017-10-12 17:15:20</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

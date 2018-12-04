@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Conversation Log" max_length="40" name="ibm_va_conversation_log" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Action" max_length="32" name="action" reference="ibm_va_action" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" hint="Contains the parameters that were output from the action" label="Action Output" max_length="4000" name="action_output" type="json"/>
+        <element attributes="edge_encryption_enabled=true" label="Virtual Agent" max_length="32" name="connect_bot" reference="ibm_va_connect_bot" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" display="true" hint="Watson conversation ID used to denote a separate conversation session" label="Conversation ID" max_length="100" name="conversation_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Error Message" max_length="4096" name="error_message" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Input Message" max_length="4096" name="input_message" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Output Message" max_length="4096" name="output_message" type="string"/>
+        <element attributes="edge_encryption_enabled=true" hint="The Watson JSON response" label="Response" max_length="10000" name="response" type="json"/>
+        <element attributes="edge_encryption_enabled=true" hint="Used for maintaining order in the millisecond level" label="Sequence" max_length="40" name="sequence" type="long"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="active" hint="The status of the conversation" label="Status" max_length="40" name="status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Active" sequence="1" value="active"/>
+                <element inactive_on_update="false" label="Resolved" sequence="2" value="resolved"/>
+                <element inactive_on_update="false" label="Escalated" sequence="3" value="escalated"/>
+                <element inactive_on_update="false" label="Abandoned" sequence="4" value="abandoned"/>
+                <element inactive_on_update="false" label="Error" sequence="5" value="error"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="global" hint="Domain to which the conversation log belongs" label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+        <element attributes="case_sensitive=true,edge_encryption_enabled=true" label="Domain Path" max_length="255" name="sys_domain_path" type="domain_path"/>
+        <element attributes="edge_encryption_enabled=true" label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Workspace" max_length="32" name="workspace" reference="ibm_va_workspace" type="reference"/>
+        <index name="index">
+            <element name="workspace"/>
+        </index>
+        <index name="index2">
+            <element name="connect_bot"/>
+        </index>
+        <index name="index3">
+            <element name="sys_domain"/>
+        </index>
+        <index name="index4">
+            <element name="action"/>
+        </index>
+        <index name="index5">
+            <element name="sys_domain_path"/>
+        </index>
+        <index name="index6">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

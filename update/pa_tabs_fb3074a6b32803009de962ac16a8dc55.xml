@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs">
+    <pa_tabs action="INSERT_OR_UPDATE">
+        <canvas_page display_value="PA Conversation Stats">f33074a6b32803009de962ac16a8dc54</canvas_page>
+        <name>Conversation Stats</name>
+        <page display_value="PA Conversation Stats">7f3074a6b32803009de962ac16a8dc53</page>
+        <sys_class_name>pa_tabs</sys_class_name>
+        <sys_created_by>johnoliver.mendoza</sys_created_by>
+        <sys_created_on>2017-08-15 20:40:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fb3074a6b32803009de962ac16a8dc55</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Conversation Stats</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+        <sys_update_name>pa_tabs_fb3074a6b32803009de962ac16a8dc55</sys_update_name>
+        <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+        <sys_updated_on>2017-08-23 22:44:36</sys_updated_on>
+    </pa_tabs>
+</record_update>

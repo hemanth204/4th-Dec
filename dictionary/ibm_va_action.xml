@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" extends="sys_metadata" label="Action" max_length="40" name="ibm_va_action" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="append" hint="Configure how your result message merges with the Watson output message" label="Message Rule" max_length="40" name="message_rule" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Prepend" sequence="1" value="prepend"/>
+                <element inactive_on_update="false" label="Append" sequence="2" value="append"/>
+                <element inactive_on_update="false" label="Override" sequence="3" value="override"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" hint="The action's output message that is shown to the user" label="Result message" max_length="1024" name="result_message" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="(function execute(inputs, outputs) {&#13;&#9;// Add your code here&#13;})(inputs, outputs);" label="Script" max_length="8000" name="script" type="script"/>
+        <element attributes="edge_encryption_enabled=true" default="global" hint="Domain to which the action belongs" label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+        <element attributes="case_sensitive=true,edge_encryption_enabled=true" label="Domain Path" max_length="255" name="sys_domain_path" type="domain_path"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
+        <index name="index2">
+            <element name="sys_domain_path"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_angular_provider">
+    <sp_angular_provider action="INSERT_OR_UPDATE">
+        <name>integrationIbmWatsonConversationHeader</name>
+        <script><![CDATA[function() {
+	
+	/*
+		Config Object
+		toggleOpen: function(),
+		externalLink: function(),
+		conversation: {
+			name: "Conversation Name",
+			avatar: "Raw Avatar Image",
+			glyphAvatar: "options.avatar_override"
+			toggleAvatar: "optons.toggle_avatar"
+		}
+		
+	*/
+		
+var templateString = 
+'	<div class="sn-navhub" aria-label="{{::c.conversation.name}}" ng-style="::c.getBannerStyle()">' + 
+'		<div class="sn-navhub-content">' + 
+'			<div class="sn-navhub-content sn-navhub-content_static" aria-hidden="true">' + 
+'				<div ng-if="!c.conversation.glyphAvatar" class="glyph-avatar fa fa-collaboration" />' +
+'				<div ng-if="c.conversation.glyphAvatar" class="glyph-avatar fa fa-{{::c.conversation.glyphAvatar}}" />' +
+'			</div>' + 
+'			<div class="sn-navhub-content sn-navhub-content_row">' + 
+'				<div class="sn-navhub-title" title="{{::c.conversation.name}}">' + 
+'					<span>{{::c.conversation.name}}</span>' + 
+'				</div>' + 
+'			</div>' + 
+'		</div>' + 
+'		<div class="sn-navhub-content sn-navhub-content_static">' + 
+'			<div class="sn-navhub-content sn-navhub-content_justify-right">' + 
+'				<a href aria-label="${New Window}"' + 
+'				   role="button"' + 
+'				   title="${Open Fullscreen}"' + 
+'                  ng-if="::c.hasExternalLink()"' +
+'				   ng-click="::c.externalLink()"'+
+'                  style="color: inherit;">' +
+'				   <i class="fa fa-{{::c.conversation.glyphExternalLink}} ibm_va_navhub_btn" aria-hidden="true" tooltips tooltip-template="${Open Fullscreen}"></i></a>' + 
+'				<a href aria-label="${Close}"' + 
+'				   title="${Close}"' + 
+'				   role="button"' + 
+'                  style="color: inherit;"' +
+'                  ng-if="::c.hasToggleOpen()"' +
+'				   ng-click="::c.toggleOpen()">'+
+'                  <i tooltips tooltip-template="${Close}" class="fa fa-{{::c.conversation.glyphClose}} ibm_va_navhub_btn" aria-hidden="true"></i></a>' + 
+'			</div>' + 
+'		</div>' + 
+'	</div>'
+;	
+	
+	return {
+		restrict: 'E',
+		replace: true,
+		template: templateString,
+		scope: {
+			config: "<"
+		},
+		bindToController: true,
+		controllerAs: 'c',
+		link: function(scope, element, attrs, ctrl) {		
+			if(ctrl.config) {
+				angular.extend(ctrl, ctrl.config);
+			}
+			console.log(ctrl.config);
+		},
+		controller: function() {
+			var c = this;
+					
+			c.hasExternalLink = function(){
+				console.log(angular.isDefined(c.externalLink));
+				return(angular.isDefined(c.externalLink));
+			};
+	
+			c.hasToggleOpen = function(){
+				return(angular.isDefined(c.toggleOpen));
+			};
+			
+			c.getBannerStyle = function() {
+				var retval = {};
+				
+				if(c.conversation.headerBgColor)
+					retval['background-color'] = c.conversation.headerBgColor;
+
+				if(c.conversation.headerTextColor)
+					retval['color'] = c.conversation.headerTextColor;
+				
+				return retval;
+			};
+		}
+	};
+}]]></script>
+        <sys_class_name>sp_angular_provider</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-23 22:43:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bbe85245b3700300a9fda72256a8dc19</sys_id>
+        <sys_mod_count>99</sys_mod_count>
+        <sys_name>integrationIbmWatsonConversationHeader</sys_name>
+        <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+        <sys_update_name>sp_angular_provider_bbe85245b3700300a9fda72256a8dc19</sys_update_name>
+        <sys_updated_by>marcus.alday</sys_updated_by>
+        <sys_updated_on>2017-08-30 20:28:33</sys_updated_on>
+        <type>directive</type>
+    </sp_angular_provider>
+</record_update>

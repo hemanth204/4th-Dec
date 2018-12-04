@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="bb526401b3640300a9fda72256a8dc7a" sys_domain="global" table="ibm_va_widget_instance" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-10-12 17:15:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>557d2ec1b33103009de962ac16a8dcb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="ibm_va_widget_instance" name="ibm_va_widget_instance" sys_domain="global" view="Default view">bb526401b3640300a9fda72256a8dc7a</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="ibm_va_widget_instance" sys_domain="global" view="Default view">88622801b3640300a9fda72256a8dc8e</sys_ui_section>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2017-10-12 17:15:29</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>ibm_va_widget_instance</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-08-11 03:49:20</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bb526401b3640300a9fda72256a8dc7a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>ibm_va_widget_instance</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+            <sys_update_name>sys_ui_form_sections_bb526401b3640300a9fda72256a8dc7a</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-08-11 03:49:20</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

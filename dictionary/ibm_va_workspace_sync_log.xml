@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Workspace Sync Log" max_length="40" name="ibm_va_workspace_sync_log" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Content" max_length="64000" name="content" type="json"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="create" hint="The workspace REST method used" label="Operation" max_length="40" name="operation" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Create" sequence="1" value="create"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" hint="The date the workspace was synced with Watson" label="Sync date" max_length="40" name="sync_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" default="global" hint="Domain to which the workspace sync log belongs" label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+        <element attributes="case_sensitive=true,edge_encryption_enabled=true" label="Domain Path" max_length="255" name="sys_domain_path" type="domain_path"/>
+        <element attributes="edge_encryption_enabled=true" label="Workspace" mandatory="true" max_length="32" name="workspace" reference="ibm_va_workspace" reference_cascade_rule="delete" type="reference"/>
+        <index name="index">
+            <element name="workspace"/>
+        </index>
+        <index name="index2">
+            <element name="sys_domain"/>
+        </index>
+        <index name="index3">
+            <element name="sys_domain_path"/>
+        </index>
+    </element>
+</database>

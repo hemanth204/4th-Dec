@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" extends="sys_metadata" label="Workspace" max_length="40" name="ibm_va_workspace" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" default="2017-05-26" hint="API version that is compatible with your workspace in date format" label="API Version" mandatory="true" max_length="32" name="api_version" type="string"/>
+        <element attributes="edge_encryption_enabled=true" hint="The virtual agent associated with this workspace" label="Virtual Agent" mandatory="true" max_length="32" name="connect_bot" reference="ibm_va_connect_bot" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="fb62c0bfb3c732009de962ac16a8dc0e" hint="Refers to the send message API REST message" label="Conversation REST Message" mandatory="true" max_length="32" name="conv_rest_message" reference="sys_rest_message" reference_qual="sys_scope=f95b0c91b33232009de962ac16a8dc34^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" hint="Optionally override the Watson service credentials for send message API" label="Conversation Service Credential" max_length="32" name="conv_service_credential" reference="sys_auth_profile_basic" reference_qual="sys_scope=f95b0c91b33232009de962ac16a8dc34^EQ" reference_qual_condition="sys_scope=f95b0c91b33232009de962ac16a8dc34^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="1000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" hint="As defined in the Watson workspace" label="Language" mandatory="true" max_length="10" name="language" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Status" max_length="32" name="status" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="global" hint="Domain to which the workspace belongs" label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+        <element attributes="case_sensitive=true,edge_encryption_enabled=true" label="Domain Path" max_length="255" name="sys_domain_path" type="domain_path"/>
+        <element attributes="edge_encryption_enabled=true" hint="Created date from the Watson workspace" label="Workspace Created" max_length="40" name="workspace_created" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" hint="Watson workspace ID" label="Workspace ID" mandatory="true" max_length="100" name="workspace_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" hint="Updated date from the Watson workspace" label="Workspace Updated" max_length="40" name="workspace_updated" type="glide_date_time"/>
+        <index name="index">
+            <element name="connect_bot"/>
+        </index>
+        <index name="index2">
+            <element name="conv_rest_message"/>
+        </index>
+        <index name="index3">
+            <element name="sys_domain"/>
+        </index>
+        <index name="index4">
+            <element name="conv_service_credential"/>
+        </index>
+        <index name="index5">
+            <element name="sys_domain_path"/>
+        </index>
+    </element>
+</database>

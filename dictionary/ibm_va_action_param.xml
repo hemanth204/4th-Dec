@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" extends="sys_metadata" label="Action Parameter" max_length="40" name="ibm_va_action_param" type="collection">
+        <element attributes="edge_encryption_enabled=true" hint="The action this parameter belongs to" label="Action" max_length="32" name="action" reference="ibm_va_action" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="160" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" hint="The name in which you reference your action parameter from the inputs argument" label="Name" max_length="32" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="global" hint="Domain to which the action parameter belongs" label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+        <element attributes="case_sensitive=true,edge_encryption_enabled=true" label="Domain Path" max_length="255" name="sys_domain_path" type="domain_path"/>
+        <element attributes="edge_encryption_enabled=true" label="Value" max_length="2000" name="value" type="string"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
+        <index name="index2">
+            <element name="action"/>
+        </index>
+        <index name="index3">
+            <element name="sys_domain_path"/>
+        </index>
+    </element>
+</database>

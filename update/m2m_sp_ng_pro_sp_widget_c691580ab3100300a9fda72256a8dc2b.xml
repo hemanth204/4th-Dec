@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget">
+    <m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE">
+        <sp_angular_provider display_value="launcherImg">83f0540ab3100300a9fda72256a8dc64</sp_angular_provider>
+        <sp_widget display_value="Connect Chat for Watson">64e1878eb3800300a9fda72256a8dcf3</sp_widget>
+        <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-01 18:54:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c691580ab3100300a9fda72256a8dc2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>launcherImg.Connect Virtual Agent</sys_name>
+        <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_c691580ab3100300a9fda72256a8dc2b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-01 18:54:15</sys_updated_on>
+    </m2m_sp_ng_pro_sp_widget>
+</record_update>

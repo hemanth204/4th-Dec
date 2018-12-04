@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ibm_va_workspace">
+    <ibm_va_workspace action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <api_version>2017-05-26</api_version>
+        <connect_bot display_value="IT Virtual Agent ">61090326c7100300628953c6f0976373</connect_bot>
+        <conv_rest_message display_value="IBM Watson Conversation - Message API">fb62c0bfb3c732009de962ac16a8dc0e</conv_rest_message>
+        <conv_service_credential display_value="IBM Watson">e6e3a486dbfc6300351059d0cf9619c6</conv_service_credential>
+        <description/>
+        <language>eng</language>
+        <name>Watson</name>
+        <status/>
+        <sys_class_name>ibm_va_workspace</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-28 09:09:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5e14ac86dbfc6300351059d0cf961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Watson</sys_name>
+        <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+        <sys_update_name>ibm_va_workspace_5e14ac86dbfc6300351059d0cf961941</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-28 09:09:12</sys_updated_on>
+        <workspace_created/>
+        <workspace_id>1e10acd4-e48c-4c16-9540-2cf7b3ccf85a</workspace_id>
+        <workspace_updated/>
+    </ibm_va_workspace>
+</record_update>

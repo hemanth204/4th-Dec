@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="input_message" label="Input Message" language="en" table="ibm_va_conversation_log">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>input_message</element>
+            <help/>
+            <hint/>
+            <label>Input Message</label>
+            <language>en</language>
+            <name>ibm_va_conversation_log</name>
+            <plural>Input Messages</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-10-12 17:15:21</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>576daac1b33103009de962ac16a8dc86</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Input Message</sys_name>
+            <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+            <sys_update_name>sys_documentation_ibm_va_conversation_log_input_message_en</sys_update_name>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2017-10-12 17:15:21</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

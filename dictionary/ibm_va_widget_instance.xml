@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=false" extends="sp_instance" label="Integration – IBM Watson Conversation Service" max_length="40" name="ibm_va_widget_instance" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Virtual Agent" max_length="32" name="bot_id" reference="ibm_va_connect_bot" type="reference"/>
+        <element attributes="pdf_cell_type=image,edge_encryption_enabled=true" label="Custom Image" max_length="40" name="custom_image" type="user_image"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="closed" label="Default State" max_length="40" name="expand_behavior" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Closed" sequence="1" value="closed"/>
+                <element inactive_on_update="false" label="Opened" sequence="2" value="opened"/>
+                <element inactive_on_update="false" label="Timer" sequence="3" value="timer"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="#81878e" label="Header Color" max_length="40" name="header_bg_color" type="color"/>
+        <element attributes="edge_encryption_enabled=true" default="#ffffff" label="Header Text Color" max_length="40" name="header_text_color" type="color"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="default" label="Launcher Image" max_length="40" name="launcher_image" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Default" sequence="1" value="default"/>
+                <element inactive_on_update="false" label="Custom" sequence="2" value="custom"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="button" label="Launcher Style" max_length="40" name="launcher_style" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Button" sequence="1" value="button"/>
+                <element inactive_on_update="false" label="Bar" sequence="2" value="bar"/>
+                <element inactive_on_update="false" label="Tab" sequence="3" value="tab"/>
+                <element inactive_on_update="false" label="Menu Item" sequence="4" value="menu"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="Chat with Bot" label="Open Label" max_length="16" name="open_label" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="#81878e" label="Tab Color" max_length="40" name="tab_bg_color" type="color"/>
+        <element attributes="edge_encryption_enabled=true" default="#ffffff" label="Tab Text Color" max_length="40" name="tab_text_color" type="color"/>
+        <element attributes="edge_encryption_enabled=true" default="5" label="Timer Countdown" max_length="40" name="timer_countdown" type="int"/>
+        <index name="index">
+            <element name="bot_id"/>
+        </index>
+    </element>
+</database>

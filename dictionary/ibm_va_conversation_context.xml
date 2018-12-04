@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Conversation Context" max_length="40" name="ibm_va_conversation_context" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Live group profile" max_length="32" name="live_group_profile" reference="live_group_profile" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="{}" hint="Stores the current state of the conversation response from Watson" label="State" max_length="20000" name="state" type="string"/>
+        <index name="index">
+            <element name="live_group_profile"/>
+        </index>
+    </element>
+</database>

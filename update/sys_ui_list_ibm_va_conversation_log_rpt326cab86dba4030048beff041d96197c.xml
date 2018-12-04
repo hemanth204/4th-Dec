@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="ibm_va_conversation_log" version="2" view="RPT326cab86dba4030048beff041d96197c">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>workspace</element>
+            <list_id display_value="ibm_va_conversation_log" element="NULL" name="ibm_va_conversation_log" parent="NULL" relationship="NULL" sys_domain="global" view="62e83b2ddb306300351059d0cf9619b0">af83e566b32003009de962ac16a8dc2b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-08-16 00:25:00</sys_created_on>
+            <sys_id>eb83e566b32003009de962ac16a8dc2c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-08-16 00:25:00</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>input_message</element>
+            <list_id display_value="ibm_va_conversation_log" element="NULL" name="ibm_va_conversation_log" parent="NULL" relationship="NULL" sys_domain="global" view="62e83b2ddb306300351059d0cf9619b0">af83e566b32003009de962ac16a8dc2b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-08-16 00:25:00</sys_created_on>
+            <sys_id>6383e566b32003009de962ac16a8dc2d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-08-16 00:25:00</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>user</element>
+            <list_id display_value="ibm_va_conversation_log" element="NULL" name="ibm_va_conversation_log" parent="NULL" relationship="NULL" sys_domain="global" view="62e83b2ddb306300351059d0cf9619b0">af83e566b32003009de962ac16a8dc2b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-08-16 00:25:00</sys_created_on>
+            <sys_id>e383e566b32003009de962ac16a8dc2d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-08-16 00:25:00</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>connect_bot</element>
+            <list_id display_value="ibm_va_conversation_log" element="NULL" name="ibm_va_conversation_log" parent="NULL" relationship="NULL" sys_domain="global" view="62e83b2ddb306300351059d0cf9619b0">af83e566b32003009de962ac16a8dc2b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-08-16 00:25:00</sys_created_on>
+            <sys_id>6783e566b32003009de962ac16a8dc2d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-08-16 00:25:00</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>error_message</element>
+            <list_id display_value="ibm_va_conversation_log" element="NULL" name="ibm_va_conversation_log" parent="NULL" relationship="NULL" sys_domain="global" view="62e83b2ddb306300351059d0cf9619b0">af83e566b32003009de962ac16a8dc2b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-08-16 00:25:00</sys_created_on>
+            <sys_id>e783e566b32003009de962ac16a8dc2d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-08-16 00:25:00</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="ibm_va_conversation_log" element="NULL" name="ibm_va_conversation_log" parent="NULL" relationship="NULL" sys_domain="global" view="62e83b2ddb306300351059d0cf9619b0">af83e566b32003009de962ac16a8dc2b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-08-16 00:25:00</sys_created_on>
+            <sys_id>6b83e566b32003009de962ac16a8dc2d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-08-16 00:25:00</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>ibm_va_conversation_log</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>johnoliver.mendoza</sys_created_by>
+            <sys_created_on>2017-08-16 00:25:00</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>af83e566b32003009de962ac16a8dc2b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>ibm_va_conversation_log</sys_name>
+            <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+            <sys_update_name>sys_ui_list_ibm_va_conversation_log_RPT326cab86dba4030048beff041d96197c</sys_update_name>
+            <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+            <sys_updated_on>2017-08-16 00:25:00</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt326cab86dba4030048beff041d96197c" name="RPT326cab86dba4030048beff041d96197c">62e83b2ddb306300351059d0cf9619b0</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

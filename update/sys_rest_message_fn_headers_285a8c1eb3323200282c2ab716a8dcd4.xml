@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers">
+    <sys_rest_message_fn_headers action="INSERT_OR_UPDATE">
+        <name>Content-Type</name>
+        <rest_message_function display_value="UPDATE">d078a346b3323200282c2ab716a8dc7e</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_headers</sys_class_name>
+        <sys_created_by>farhana.chowdhury</sys_created_by>
+        <sys_created_on>2017-05-19 23:29:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>285a8c1eb3323200282c2ab716a8dcd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Content-Type</sys_name>
+        <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+        <sys_update_name>sys_rest_message_fn_headers_285a8c1eb3323200282c2ab716a8dcd4</sys_update_name>
+        <sys_updated_by>farhana.chowdhury</sys_updated_by>
+        <sys_updated_on>2017-05-19 23:29:42</sys_updated_on>
+        <value>application/json</value>
+    </sys_rest_message_fn_headers>
+</record_update>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <application display_value="Integration - IBM Watson Conversation">f048608253bb32006713ddeeff7b1275</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DOC_LINK</link_type>
+        <map_page/>
+        <mobile_title>Getting Started</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>1</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>CSHelp:IBM_Watson_Conv</query>
+        <report/>
+        <roles>x_snc_ibm_cs.watson_conversation_admin</roles>
+        <survey/>
+        <survey_overwrite>false</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-03 20:48:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ce9e36620b18030071f08f6d37673a2e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Getting Started</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+        <sys_update_name>sys_app_module_ce9e36620b18030071f08f6d37673a2e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-03 21:20:31</sys_updated_on>
+        <timeline_page/>
+        <title>Getting Started</title>
+        <u_group/>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name>watson_conv</window_name>
+    </sys_app_module>
+</record_update>

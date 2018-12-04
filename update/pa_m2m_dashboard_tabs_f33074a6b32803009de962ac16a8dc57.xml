@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
+    <pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE">
+        <dashboard display_value="IBM Watson Conversation Dashboard">362074a6b32803009de962ac16a8dc4e</dashboard>
+        <home>false</home>
+        <homepage/>
+        <order>1</order>
+        <sys_class_name>pa_m2m_dashboard_tabs</sys_class_name>
+        <sys_created_by>johnoliver.mendoza</sys_created_by>
+        <sys_created_on>2017-08-15 20:40:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f33074a6b32803009de962ac16a8dc57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>362074a6b32803009de962ac16a8dc4e</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+        <sys_update_name>pa_m2m_dashboard_tabs_f33074a6b32803009de962ac16a8dc57</sys_update_name>
+        <sys_updated_by>johnoliver.mendoza</sys_updated_by>
+        <sys_updated_on>2017-08-15 20:40:50</sys_updated_on>
+        <tab display_value="Conversation Stats">fb3074a6b32803009de962ac16a8dc55</tab>
+    </pa_m2m_dashboard_tabs>
+</record_update>

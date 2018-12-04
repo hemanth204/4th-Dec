@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_ibm_cs.WatsonConversationService</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>WatsonConversationService</name>
+        <script><![CDATA[var WatsonConversationService = Class.create();
+WatsonConversationService.prototype = {
+    initialize: function(vaConstants, i18n) {
+		this.vaConstants = vaConstants;
+		this.i18n = i18n;
+    },
+
+	processMessage: function(workspaceGR, messageBody, state) {
+		var watsonUtil = new x_snc_ibm_cs.WatsonChatUtil(this.vaConstants, this.i18n);
+		var start = watsonUtil.currentTimeMillis();
+		try {
+			var restMsgName = workspaceGR.conv_rest_message.getDisplayValue();
+			var r = new sn_ws.RESTMessageV2(restMsgName, 'Message');
+			r.setHttpTimeout(gs.getProperty(this.vaConstants.WATSON_REST_TIMEOUT, this.vaConstants.DEFAULT_WATSON_TIMEOUT));
+			r.setStringParameter(this.vaConstants.VERSION, workspaceGR.api_version);
+			r.setStringParameter(this.vaConstants.WORKSPACEID, workspaceGR.workspace_id);
+			r.setStringParameterNoEscape(this.vaConstants.MESSAGE, this._escapeJSONStr(messageBody));
+			r.setStringParameterNoEscape(this.vaConstants.CONTEXT, JSON.stringify(state.context));
+			
+			if (workspaceGR.conv_service_credential)
+				r.setAuthenticationProfile('basic', workspaceGR.conv_service_credential);
+			
+			var response = r.execute();
+			if (response.haveError()) {
+				return this._handleError(response);
+			}
+			return JSON.parse(response.getBody());
+		}
+		catch(ex) {
+			var userErrorMsg = this.i18n.getMessageLang("I'm having problems right now. Please try again later.");
+			var exMsg = 'Exception invoking Watson Conversation Service: ' + ex;
+			gs.error(exMsg);
+			return {
+				error_message: exMsg,
+				user_message: userErrorMsg				
+			};
+		} finally {
+			var end = watsonUtil.currentTimeMillis();
+			watsonUtil.logDuration('WatsonConversationService', start, end);
+		}		
+	},
+	
+	_escapeJSONStr: function(inputMsg) {
+		// Escapes special JSON characters
+		var outputMsg = JSON.stringify(inputMsg);
+		
+		return outputMsg.substring(1, outputMsg.length - 1);
+	},
+
+	_handleError: function(response) {
+		var responseBody = response.getBody(); // Sometimes body has the useful info of where it failed.	
+		var errorCode = response.getErrorCode();
+		var statusCode = response.getStatusCode();
+		var errorMsg = response.getErrorMessage();
+
+		var messageToLog = 'Watson response error: SN error code=' + errorCode + ', http status code=' + statusCode + ', message=' + errorMsg + ', body=' + responseBody;
+
+		gs.error(messageToLog);
+
+		if (statusCode === this.vaConstants.SC_REQUEST_TIMEOUT || errorMsg === this.vaConstants.SOCKET_TIMEOUT) { 
+			userMsg = this.i18n.getMessageLang("I'm having connection problems right now, please try again shortly.");
+		} else {
+			// Anything else need to be take care by the system admin ..
+			userMsg = this.i18n.getMessageLang("I'm having problems right now. Please try again later.");			
+		}
+
+		return {
+			error_message: messageToLog,
+			user_message: userMsg
+		};
+	},
+	
+    type: 'WatsonConversationService'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>johnoliver.mendoza</sys_created_by>
+        <sys_created_on>2017-06-06 21:15:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>71789484b31b32009de962ac16a8dca2</sys_id>
+        <sys_mod_count>123</sys_mod_count>
+        <sys_name>WatsonConversationService</sys_name>
+        <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+        <sys_update_name>sys_script_include_71789484b31b32009de962ac16a8dca2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-09-21 18:32:47</sys_updated_on>
+    </sys_script_include>
+</record_update>

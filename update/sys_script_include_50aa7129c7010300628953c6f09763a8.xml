@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_ibm_cs.ConversationLauncher</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ConversationLauncher</name>
+        <script><![CDATA[var ConversationLauncher = Class.create();
+ConversationLauncher.prototype = {
+	initialize: function() {
+		this.vaConstants = new x_snc_ibm_cs.ConversationConstants();
+		//initialize with default language - "en"
+		this.i18n = new x_snc_ibm_cs.ConversationI18NUtils();
+	},
+	
+	processConversation: function(groupId, userLiveProfileId, messageBody ) {
+		var watsonUtil = new x_snc_ibm_cs.WatsonChatUtil(this.vaConstants, this.i18n);
+		var start = watsonUtil.currentTimeMillis();
+		
+		var userSysId = gs.getUserID(); // Current user who wrote the live message record
+		
+		// Don't process the records, if it is from the BOT
+		if (this._isBotUser(userSysId)) {
+			return;
+		}
+		
+		// Find if the other user in the conversation is a bot user.
+		var otherUserSysId = this._findOtherUser(groupId, userLiveProfileId);
+		
+		if (! otherUserSysId) {
+			return; // There is no other user, So, don't process
+		}
+		
+		// Don't process the records, if the other user is not a BOT user. Two normal users are chatting
+		if (! this._isBotUser(otherUserSysId)) {
+			return;
+		}
+		
+		// The other user is a BOT user
+		var botUserName = this._getUserName(otherUserSysId);
+		
+		if (botUserName) {
+			if (this._isSystemMessage(messageBody, botUserName)) {
+				return;
+			}
+			
+			if (messageBody.includes('@' + botUserName)) {
+				return;
+			}
+		}
+		
+		var state = {};
+
+		// All good, process the message
+		var conversationController = new x_snc_ibm_cs.C3ConversationController(this.vaConstants, this.i18n);
+		conversationController.processMessage(groupId, otherUserSysId, messageBody, state);
+
+		var end = watsonUtil.currentTimeMillis();
+		watsonUtil.logDuration('ConversationLauncher', start, end);
+
+	},
+
+	_isBotUser: function(userSysId) {
+		var gr = new GlideRecord(this.vaConstants.IBM_VA_CONNECT_BOT);
+		return gr.get(userSysId);
+	},
+	
+	_getUserName: function(otherUserSysId) {
+		var user = new GlideRecord(this.vaConstants.SYS_USER);
+		if (user.get(otherUserSysId)) {
+			return user.first_name;
+		}
+		return null;
+	},
+	
+	_findOtherUser: function(groupId, liveProfileId){
+		var lgm = new GlideRecord(this.vaConstants.LIVE_GROUP_MEMBER);
+		lgm.addQuery(this.vaConstants.GROUP, groupId);
+		lgm.addQuery(this.vaConstants.MEMBER, '!=', liveProfileId);
+		lgm.query();
+		if (lgm.next()) {
+			return lgm.member.document; // this should be the other user record only.
+		}
+		return null;
+	},
+	
+	_isSystemMessage: function(message, botName) {
+		var ignoredMessages = this._getIgnoredMessages(botName);
+		return new global.ArrayUtil().indexOf(ignoredMessages, message) >= 0;			
+	},
+	
+	_getIgnoredMessages: function(botName) {
+		var cacheKey = this.vaConstants.CACHE_KEY + botName;
+		var ignoredMessages = [];
+		
+		if (!ignoredMessages.length) {
+			var gr = new GlideRecord(this.vaConstants.CHAT_QUEUE);
+			gr.addQuery(this.vaConstants.NAME, botName);
+			gr.addActiveQuery();
+			gr.query();
+			
+			while(gr.next()) {
+				if (gr.question)
+					ignoredMessages.push(gr.question);
+
+				if (gr.confirm_problem)
+					ignoredMessages.push(gr.confirm_problem);
+
+				if (gr.initial_agent_response)
+					ignoredMessages.push(gr.initial_agent_response);		
+			}
+			
+		}				
+		
+		return ignoredMessages;
+	},
+	
+	type: 'ConversationLauncher'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-09-06 20:24:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>50aa7129c7010300628953c6f09763a8</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>ConversationLauncher</sys_name>
+        <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+        <sys_update_name>sys_script_include_50aa7129c7010300628953c6f09763a8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-09-21 21:02:09</sys_updated_on>
+    </sys_script_include>
+</record_update>

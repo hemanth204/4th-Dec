@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="header_text_color" label="Header Text Color" language="en" table="ibm_va_widget_instance">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>header_text_color</element>
+            <help/>
+            <hint/>
+            <label>Header Text Color</label>
+            <language>en</language>
+            <name>ibm_va_widget_instance</name>
+            <plural>Header Text Colors</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-10-12 17:15:19</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>726daac1b33103009de962ac16a8dc29</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Header Text Color</sys_name>
+            <sys_package display_value="Integration - IBM Watson Conversation Service" source="x_snc_ibm_cs">f95b0c91b33232009de962ac16a8dc34</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Integration - IBM Watson Conversation Service">f95b0c91b33232009de962ac16a8dc34</sys_scope>
+            <sys_update_name>sys_documentation_ibm_va_widget_instance_header_text_color_en</sys_update_name>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2017-10-12 17:15:19</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
